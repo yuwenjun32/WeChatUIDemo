@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".acticity.RegisterActivity">
+    tools:context=".acticity.RegisterActivity"
+    android:background="#F5F5F5">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/circleImageView"

@@ -14,7 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="?attr/colorButtonNormal"
+            android:background="#F5F5F5"
             android:orientation="horizontal">
 
             <TextView

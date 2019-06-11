@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DisFragment">
+    tools:context=".DisFragment"
+    android:background="#F5F5F5">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -14,7 +15,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:orientation="horizontal"
-            android:background="?attr/colorButtonNormal">
+            android:background="#F5F5F5">
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -38,11 +39,11 @@
                 android:src="@android:drawable/ic_menu_add"
                 android:gravity="center_vertical|right"/>
         </LinearLayout>
-        <TextView
+        <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="发现"
-            android:textSize="50sp"/>
+            android:layout_height="match_parent">
+            <include layout="@layout/dis_item"/>
+        </android.support.v4.widget.NestedScrollView>
     </LinearLayout>
 
 </FrameLayout>
