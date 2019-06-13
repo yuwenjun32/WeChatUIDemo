@@ -4,11 +4,17 @@
 
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -17,18 +23,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".acticity.LoginActivity" />
+        <activity android:name=".acticity.mayunActivity" />
+        <activity android:name=".acticity.RegisterActivity" />
+        <activity android:name=".acticity.PaizhaoActivity" />
+        <activity android:name=".acticity.PengyouquanActivity" />
+        <activity android:name=".acticity.SaoyisaoActivity" />
+        <activity android:name=".acticity.ShopActivity" />
+        <activity android:name=".acticity.QidongActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".acticity.LoginActivity" />
-        <activity android:name=".acticity.mayunActivity" />
-        <activity android:name=".acticity.RegisterActivity" />
-        <activity android:name=".acticity.PaizhaoActivity" />
-        <activity android:name=".acticity.PengyouquanActivity"></activity>
+        <activity android:name=".acticity.YouxiActivity"></activity>
     </application>
 
 </manifest>

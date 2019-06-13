@@ -23,6 +23,7 @@ import android.widget.TextView;
 
 import com.example.wechatui.ChatFragment;
 import com.example.wechatui.ChatMessage;
+import com.example.wechatui.MainActivity;
 import com.example.wechatui.R;
 
 import java.util.ArrayList;
@@ -34,7 +35,7 @@ public class mayunActivity extends AppCompatActivity {
     private Button send;
     private List<ChatMessage> messagesList;
     private mayunActivity.ChatListAdapter chatListAdapter;
-    private ImageView paizhao;
+    private ImageView back,paizhao;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +44,11 @@ public class mayunActivity extends AppCompatActivity {
         msgListView=(ListView)findViewById(R.id.lv_content_panding);
         inputText=(EditText)findViewById(R.id.et_content_panding);
         send=(Button)findViewById(R.id.bt_send_panding);
+        messagesList=new ArrayList<ChatMessage>();
+        messagesList.add(new ChatMessage("皮卡皮卡",ChatMessage.TYPE_RECEIVED));
+        messagesList.add(new ChatMessage("皮卡丘",ChatMessage.TYPE_SEND));
+        messagesList.add(new ChatMessage("皮卡皮卡皮卡",ChatMessage.TYPE_RECEIVED));
+        messagesList.add(new ChatMessage("说人话可以吗？",ChatMessage.TYPE_SEND));
         messagesList=new ArrayList<ChatMessage>();
         chatListAdapter=new ChatListAdapter();
         msgListView.setAdapter(chatListAdapter);
@@ -88,6 +94,14 @@ public class mayunActivity extends AppCompatActivity {
                     notifyBuilder.setContentIntent(pendingIntent);
                     notificationManager.notify(1,notifyBuilder.build());
                 }
+            }
+        });
+        back=(ImageView)findViewById(R.id.fanhui1);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3=new Intent(mayunActivity.this,MainActivity.class);
+                startActivity(intent3);
             }
         });
 

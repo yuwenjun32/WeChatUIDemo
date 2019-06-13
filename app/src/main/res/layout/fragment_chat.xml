@@ -34,6 +34,7 @@
                 android:src="@android:drawable/ic_menu_search" />
 
             <ImageView
+                android:id="@+id/popobutton"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="3"

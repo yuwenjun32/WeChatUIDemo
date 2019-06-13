@@ -51,7 +51,7 @@
             android:id="@+id/tv_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="昨天"
+            android:text="刚刚"
             android:textSize="20sp" >
         </TextView>
     </LinearLayout>
