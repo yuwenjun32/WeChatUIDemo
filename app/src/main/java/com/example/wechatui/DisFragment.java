@@ -83,7 +83,7 @@ public class DisFragment extends Fragment {
         AlertDialog.Builder builder=new AlertDialog.Builder(getActivity());
         builder.setIcon(R.drawable.touxiang);
         builder.setTitle("温馨提示");
-        builder.setMessage("未完待续");
+        builder.setMessage("请在左上角向右滑动打开侧滑菜单栏");
         builder.setPositiveButton("我知道了",
                 new DialogInterface.OnClickListener() {
                     @Override

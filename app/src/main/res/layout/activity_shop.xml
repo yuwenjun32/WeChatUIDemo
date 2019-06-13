@@ -36,6 +36,7 @@
             android:layout_height="wrap_content"
             android:background="@android:color/holo_red_light">
             <TextView
+                android:id="@+id/wenzi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="老板跟小姨子跑了！跳楼价！！"

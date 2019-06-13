@@ -7,8 +7,11 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -26,7 +29,7 @@ public class ShopActivity extends AppCompatActivity {
     private List<ImageView> imgdata;
     private ViewPager viewPager;
     private ViewPagePoint viewPagePoint;
-    private TextView tvcar;
+    private TextView tvcar,wenzi;
     private int[] imgs;
     private String[] carname;
     private ListView mylistview;
@@ -149,6 +152,12 @@ public class ShopActivity extends AppCompatActivity {
 
             }
         });
+
+        //文字移动
+        wenzi= (TextView) findViewById(R.id.wenzi);
+        Animation mAnnotation=AnimationUtils.loadAnimation(this,R.anim.wenziyidong);
+        ((Animation) mAnnotation).setFillAfter(true);
+        wenzi.startAnimation(mAnnotation);
     }
     private class MyPageAdapter extends PagerAdapter {
 
