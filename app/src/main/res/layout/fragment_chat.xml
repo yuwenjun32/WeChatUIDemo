@@ -40,10 +40,15 @@
                 android:gravity="center_vertical|right"
                 android:src="@android:drawable/ic_menu_add" />
         </LinearLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="首页"
-        android:textSize="50sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/lv_chat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="3sp" >
+            </ListView>
+        </LinearLayout>
     </LinearLayout>
 </FrameLayout>

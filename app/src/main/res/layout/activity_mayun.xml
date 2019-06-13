@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".acticity.mayunActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right">
+                <ImageView
+                    android:id="@+id/fanhui1"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/em_mm_title_back"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="马云"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_content_panding"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"></ListView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/paizhao"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:src="@drawable/em_actionbar_camera_icon"/>
+            <EditText
+                android:id="@+id/et_content_panding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/bt_send_panding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
